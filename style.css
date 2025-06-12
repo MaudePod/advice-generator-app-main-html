@@ -41,6 +41,8 @@ section[class="card"] {
     container: card / inline-size;
     font-weight: 800;
     font-family: 'Manrope';
+    box-sizing: border-box;
+    padding:50px 20px;
 }
 
 section[class="card-title"]::before {
@@ -53,12 +55,12 @@ section[class="card-title"] {
 }
 
 section[class="card-body"] {
-    height: 120px;
+    min-height: 120px;
     width: var(--card_body_and_footer_width);
     font-size: 4.5cqi;
     color: var(--light_cyan);
     text-align: center;
-    overflow: scroll;
+    padding-bottom: 10px;
 }
 
 footer[class="card-footer"] {
@@ -90,6 +92,7 @@ form[class="dice-container"]:hover {
 div[class="attribution"] {
     position: absolute;
     bottom: 50px;
+    color: var(--light_cyan);
 }
 
 @container body (inline-size <=800px) {
